@@ -1,4 +1,4 @@
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -13,7 +13,6 @@ li a {
   height: 10vh;
 }
 
-/* Change the link color on hover */
 li a:hover {
   background-color: #555;
   color: white;
@@ -22,4 +21,11 @@ li a:hover {
 .logo {
   text-align: center;
   vertical-align: baseline;
+}
+
+*/
+
+li a {
+  display: block;
+  text-align: center;
 }
