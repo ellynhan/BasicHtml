@@ -13,3 +13,7 @@ Just website for entertainment
 * https://codemyui.com/fullscreen-flexbox-overlay-navigation-using/
 
 * https://codemyui.com/menu-button-expand-to-navigation-menu-on-click/
+
+
+## Align 
+* https://getbootstrap.com/docs/4.3/utilities/flex/
