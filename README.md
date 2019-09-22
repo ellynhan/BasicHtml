@@ -17,3 +17,7 @@ Just website for entertainment
 
 ## Align 
 * https://getbootstrap.com/docs/4.3/utilities/flex/
+
+
+## Fix Footer Location
+* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
