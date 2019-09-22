@@ -1,6 +1,8 @@
 # MyWeb
 Just website for entertainment 
 
+*thinking about change it to react....
+
 ## Navbar
 * https://codemyui.com/nested-drop-menu-css-animation/
 
