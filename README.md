@@ -21,3 +21,7 @@ Just website for entertainment
 
 ## Fix Footer Location
 * https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+
+
+## diverse effects 
+* https://www.w3schools.com/howto/howto_css_image_overlay.asp
