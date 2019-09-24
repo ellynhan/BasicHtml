@@ -4,34 +4,89 @@
 
 #page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 110vh;
   background-color: black;
 }
 
 #content-page-container {
   background-color: aqua;
-  height: 100vh;
+  height: 110vh;
   padding-bottom: 2.5rem;
   /* Footer height */
 }
 
-#left-content-container {
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#img-content-container {
   background-color: black;
-}
-
-#left-content-container img {
-  max-width: 80%;
-  height: auto;
-  padding: 1vh;
-  margin-top: 1vh;
-  margin-bottom: 3vh;
-}
-
-#right-content-container {
-  background-color: white;
-  overflow: hidden;
   position: relative;
   padding: 0px;
+  overflow: hidden;
+  height: auto;
+}
+
+#real-container {
+  position: relative;
+}
+
+#backgroundImg {
+  display: block;
+  width: 100vw;
+  background-size: contain;
+}
+
+#real-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.openbtn {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  height: 50px;
+  width: 200px;
+}
+
+.openbtn:hover {
+  background-color: #444;
 }
 
 .overlay {
@@ -47,28 +102,17 @@
   background-color: rgb(127, 139, 143);
 }
 
-#right-content-container:hover .overlay {
-  opacity: 0.8;
-}
-
-#backgroundImg {
-  width: 100%;
-  display: block;
-  background-size: contain;
-}
-
 .text {
   color: white;
-  font-size: 5vh;
+  font-size: 4vw;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 70%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 
 footer {
   position: absolute;
