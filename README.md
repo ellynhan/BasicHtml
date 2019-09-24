@@ -28,6 +28,7 @@ Just website for entertainment
 ## diverse effects 
 * <https://www.w3schools.com/howto/howto_css_image_overlay.asp>
 
+how to make overlay automatically : https://stackoverflow.com/questions/18540948/how-to-create-an-overlay-to-automatically-load-on-page-load
 
 ## Text above the Image
 * <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text>
