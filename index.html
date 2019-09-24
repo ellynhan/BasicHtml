@@ -3,35 +3,41 @@
 
 <head>
     <link rel="stylesheet" href='./style.css'>
+    <title id="titleCheck">JaewonHan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <div id="page-container">
         <!-- flex-row : horizontal setting  -->
         <div id="content-page-container" class="d-flex flex-row">
-            <!-- left side //TODO: make it hamburger to be responsive-->
-            <div id="left-content-container" class="d-flex flex-column justify-content-center col-2">
-                <!-- logo -->
+            <!-- <div id="left-content-container" class="d-flex flex-column justify-content-center">
                 <image src="./images/JW.png" class="align-self-center" id="logo" />
-
-                <!-- nav list -->
                 <div class="list-group list-group-flush flex-grow-1">
-                    <a href="#" class="list-group-item list-group-item-action active">Home</a>
-                    <a href="./aboutMe.html" class="list-group-item list-group-item-action">About Me</a>
-                    <a href="#" class="list-group-item list-group-item-action">Favorite Things</a>
-                    <a href="#" class="list-group-item list-group-item-action">Skills</a>
-                    <a href="#" class="list-group-item list-group-item-action">Hobby</a>
-                    <a href="#" class="list-group-item list-group-item-action">Plan</a>
                 </div>
+            </div> -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#" active>Home</a>
+                <a href="./aboutMe.html">About Me</a>
+                <a href="#">Favorite Things</a>
             </div>
-            <!-- right side -->
-            <div id="right-content-container" class="col-10">
-                <img src="./images/joffre.jpeg" id="backgroundImg" class="float-right" />
-                <div class="overlay">
-                    <div class="text">Welcome to My WebSite</div>
+            <div id="img-content-container">
+                <div id="real-container">
+                    <img src="./images/joffre.jpeg" id="backgroundImg" />
+                    <div class=" overlay">
+                        <div class="text">Welcome to My WebSite!</div>
+                    </div>
                 </div>
+                <button class="openbtn" onclick="openNav()">☰ MENU</button>
             </div>
         </div>
 
@@ -43,6 +49,15 @@
                 <p>Contact information:<a href=" gkrp11@gmail.com">gkrp11@gmail.com</a></p>
             </div>
         </footer>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
     </div>
 </body>
 
