@@ -16,28 +16,29 @@
 </head>
 
 <body>
-    <div id="page-container">
+    <div id="whole-page-container">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" active>Home</a>
+            <a href="./aboutMe.html">About Me</a>
+            <a href="#">Favorite Things</a>
+        </div>
         <!-- flex-row : horizontal setting  -->
-        <div id="content-page-container" class="d-flex flex-row">
+        <div id="content-page-container" class="d-flex flex-column">
             <!-- <div id="left-content-container" class="d-flex flex-column justify-content-center">
                 <image src="./images/JW.png" class="align-self-center" id="logo" />
-                <div class="list-group list-group-flush flex-grow-1">
-                </div>
             </div> -->
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#" active>Home</a>
-                <a href="./aboutMe.html">About Me</a>
-                <a href="#">Favorite Things</a>
-            </div>
-            <div id="img-content-container">
-                <div id="real-container">
+            <div id="button-img-container">
+                <div id="img-container">
                     <img src="./images/joffre.jpeg" id="backgroundImg" />
                     <div class=" overlay">
                         <div class="text">Welcome to My WebSite!</div>
                     </div>
                 </div>
                 <button class="openbtn" onclick="openNav()">☰ MENU</button>
+            </div>
+            <div class="below-img-container flex-grow-1">
+                <div style="color:bisque">I have no idea about what to write</div>
             </div>
         </div>
 
