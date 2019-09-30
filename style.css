@@ -13,6 +13,7 @@
 /* menu bar */
 .list-group a {
   margin-top: 2vh;
+  z-index: 4;
 }
 
 .sidepanel {
@@ -26,6 +27,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  z-index: 3;
 }
 
 .sidepanel a {
@@ -35,11 +37,13 @@
   color: #818181;
   display: block;
   transition: 0.3s;
+  z-index: 3;
 }
 
 
 .sidepanel a:hover {
   color: #f1f1f1;
+  z-index: 3;
 }
 
 .sidepanel .closebtn {
@@ -47,6 +51,7 @@
   top: 0;
   right: 25px;
   font-size: 36px;
+  z-index: 4;
 }
 
 #button-img-container {
