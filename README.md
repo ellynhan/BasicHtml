@@ -4,17 +4,9 @@ Just website for entertainment
 *thinking about change it to react....
 
 ## Navbar
-* https://codemyui.com/nested-drop-menu-css-animation/
+* <https://www.w3schools.com/howto/howto_js_topnav_responsive.asp> : responsive hambergur
 
-* https://codemyui.com/pure-css-sliding-navigation-button-animation/
-
-* https://codemyui.com/responsive-sidebar-menu/
-
-* https://codemyui.com/circle-menu-effect/
-
-* https://codemyui.com/fullscreen-flexbox-overlay-navigation-using/
-
-* https://codemyui.com/menu-button-expand-to-navigation-menu-on-click/
+* <https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse> : collapse navbar
 
 
 ## Align 
@@ -44,3 +36,6 @@ how to make overlay automatically : https://stackoverflow.com/questions/18540948
 
 ## Layout Order
 * <https://aboooks.tistory.com/83> -> 이거 말고 순수 css 만으로 우선순위 정하는 것 먼저 찾아보고 정리하기
+
+## Javascript media query
+* <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia>
