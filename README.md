@@ -39,3 +39,7 @@ how to make overlay automatically : https://stackoverflow.com/questions/18540948
 
 ## Javascript media query
 * <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia>
+
+
+잠깐 뭔가 마음에 안드는데? 
+그냥 어떤 웹사이트를 하나 참고해서 그 벤치마킹하는 것으로 다시 만들어보자.
