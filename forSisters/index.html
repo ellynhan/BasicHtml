@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href='./style.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <title>WEBSITE DEMO</title>
+</head>
+
+<body>
+  <header>
+    <section id="logo">
+      <a href="#main"><img src="./img/images.jpeg" style="width:100px;"></a>
+    </section>
+    <section id="menu-area">
+      <!-- <button id="menu-btn"></button> this is for response in small screen-->
+      <nav class="navbar navbar-expand-sm navbar-dark justify-content-end">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Service</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#service">Option 1</a>
+                <a class="dropdown-item" href="#service">Option 2</a>
+                <a class="dropdown-item" href="#service">Option 3</a></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#showcase">Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#landingPage">landingPage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </section>
+  </header>
+
+  <div>
+    <section id="main" class="section odd" style="height:auto">
+      <div class="home-image-container">
+        <img src="img/Digitalmarkeing.png" id="homeImage">
+
+      </div>
+    </section>
+    <section id="about" class="section">
+      <h3>About section</h3>
+    </section>
+    <section id="service" class="section odd">
+      <h3>Service section</h3>
+    </section>
+    <section id="showcase" class="section">
+      <h3>Showcase section</h3>
+    </section>
+    <section id="landingPage" class="section odd">
+      <h3>Landingpage section</h3>
+    </section>
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <div class="contact-container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+          <label for="country">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email">
+          <!-- <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something that you want to ask"
+            style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function menubarAppear(width) {
+      var x = document.getElementById("collapsibleNavbar")
+      if (width.matches) {
+        x.className = "collapse navbar-collapse";
+      } else {
+        x.className = "";
+      }
+    }
+    var width = window.matchMedia("(max-width:575px)")
+    menubarAppear(width)
+    width.addListener(menubarAppear)
+  </script>
+</body>
+
+</html>
