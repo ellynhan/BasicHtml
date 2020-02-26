@@ -1,7 +1,5 @@
-# MyWeb
-Just website for entertainment 
-
-*thinking about change it to react....
+# TODOLIST
+* fix the menu block on the home page.
 
 ## Navbar
 * <https://www.w3schools.com/howto/howto_js_topnav_responsive.asp> : responsive hambergur
