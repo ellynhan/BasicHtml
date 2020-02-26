@@ -12,10 +12,14 @@ Just website for entertainment
 ## Align 
 * <https://getbootstrap.com/docs/4.3/utilities/flex/>
 
+## Parallax
+* <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax>
 
 ## Fix Footer Location
 * <https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/>
 
+
+* <https://www.w3schools.com/howto/howto_css_fixed_footer.asp> <<<<<I use this one
 
 ## diverse effects 
 * <https://www.w3schools.com/howto/howto_css_image_overlay.asp>
