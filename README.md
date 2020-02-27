@@ -1,5 +1,5 @@
 # TODOLIST
-* fix the menu block on the home page.
+~~* fix the menu block on the home page.~~
 
 ## Navbar
 * <https://www.w3schools.com/howto/howto_js_topnav_responsive.asp> : responsive hambergur
@@ -68,3 +68,8 @@ how to make overlay automatically : https://stackoverflow.com/questions/18540948
 
 ## pure css button
 <https://www.w3schools.com/css/css3_buttons.asp>
+
+## 아직 적용안했는데 메뉴 욕심남
+
+
+<https://codepen.io/ktk062/pen/ZOyXwJ>
