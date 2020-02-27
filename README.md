@@ -1,6 +1,7 @@
 # TODOLIST
-~~* fix the menu block on the home page.~~
+~~fix the menu block on the home page.~~
 
+스크롤 하시오 라고 쩜 쩜 쩜 차례로 점멸하는 그런, 이미지레디처럼 되는거 만들기 
 ## Navbar
 * <https://www.w3schools.com/howto/howto_js_topnav_responsive.asp> : responsive hambergur
 
