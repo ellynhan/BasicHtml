@@ -21,7 +21,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="#" active>Home</a>
             <a href="./aboutMe.html">About Me</a>
-            <a href="#">Favorite Things</a>
+            <a href="#">Travel Log</a>
         </div>
         <!-- flex-row : horizontal setting  -->
         <div id="content-page-container" class="d-flex flex-column">
@@ -29,34 +29,58 @@
                 <image src="./images/JW.png" class="align-self-center" id="logo" />
             </div> -->
             <div id="button-img-container">
-                <div id="img-container">
-                    <img src="./images/joffre.jpeg" id="backgroundImg" />
-                    <div class=" overlay">
+                <!-- <div id="img-container">
+                    <img src="./images/joffre.jpeg" id="backgroundImg" /> -->
+                    <!--오버레이기능. 마우스 가져다 대면 화면이 뿌얘짐.-->
+                    <!-- <div class=" overlay">
                         <div class="text">Welcome to My WebSite!</div>
-                    </div>
-                </div>
-                <button class="openbtn" onclick="openNav()">☰ MENU</button>
+                    </div> 
+                </div> -->
+                
             </div>
-            <div class="below-img-container flex-grow-1">
-                <div style="color:bisque">I have no idea about what to write</div>
+            <div class="parallax"></div>
+            
+            <div style="margin-bottom:40px;color:bisque;background-color:black;font-size:36px">
+                I have no idea what to write here yet🤔<br />
+                New Line<br />
+                New Line<br />
+                New Line<br />
+                New Line<br />
+                New Line<br />
+                New Line<br />
+                New Line<br />
             </div>
         </div>
 
 
         <!-- footer -->
+        <button class="openbtn" id="menu" onclick="openNav()">☰ MENU</button>
         <footer>
-            <div class='text-center' style='color: white; background-color:black; padding: 5px'>
-                <p>Made by Jaewon Han</p>
-                <p>Contact information: <a href="mailto:gkrp11@gmail.com">gkrp11@gmail.com</a></p>
+            <div class='text-center'>
+                <p>Made by Ellyn | updated : 2020/02/27</p>
+                <!-- <p>Contact information: <a href="mailto:gkrp11@gmail.com">gkrp11@gmail.com</a></p> -->
             </div>
         </footer>
         <script>
+            //메뉴바 슬라이드 기능
             function openNav() {
                 document.getElementById("mySidepanel").style.width = "250px";
             }
 
             function closeNav() {
                 document.getElementById("mySidepanel").style.width = "0";
+            }
+            window.onscroll = function() {myFunction()};
+
+            var menu = document.getElementById("menu");
+            var sticky = menu.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    menu.classList.add("sticky")
+                } else {
+                    menu.classList.remove("sticky");
+                }
             }
         </script>
     </div>
