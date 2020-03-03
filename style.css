@@ -4,6 +4,8 @@ html{
 }
 body{
   margin-bottom: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 .parallax {
   /* The image used */
@@ -45,7 +47,7 @@ body{
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(0,0,0,0.8);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -108,15 +110,15 @@ body{
   cursor: pointer;
   background-color: #111;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 0px;
   border: none;
   height: 50px;
-  width: 200px;
+  width: 150px;
 }
 .sticky {
   position: fixed;
   top: 8px;
-  width:200px;
+  width:150px;
 }
 .openbtn:hover {
   background-color: #444;
@@ -175,7 +177,6 @@ footer {
   width: 100%;
   height: 87vh;
   margin-top: 60px;
-  font-family: Helvetica, sans-serif;
   overflow: scroll;
 }
 
@@ -302,4 +303,59 @@ footer {
   .right {
     left: 0%;
   }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot {
+  animation: 1s blink infinite;
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  z-index: 1000;
+  top: 480px;
+  right: 10vw;
+  }
+.loader__dot:nth-child(2) { animation-delay: 200ms; top: 420px;}
+.loader__dot:nth-child(3) { animation-delay: 400ms; top: 360px;}
+.loader__dot:nth-child(4) { animation-delay: 600ms; top: 300px;}
+
+.inform_text{
+  font-style: oblique;
+  animation: 2s blink infinite;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  top: 270px;
+  right: 8vw;
 }

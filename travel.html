@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!-- 여기그 갤러리기능 그거 넣기. 화살표누르면 옆으로가는거. 그리고 자동으로 슬라이드하는 기능도 넣기. -->
+<!-- 갤러리 사진 하나하나에는 그에 따른 설명?과 제목 붙이기?? 아니면 슬라이드 위에있고 밑으로는 격자 갤러리를 만들까? -->
+<head>
+    <link rel="stylesheet" href='./style.css'>
+    <title id="titleCheck">JaewonHan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- flex-row : horizontal setting  -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./index.html">Home</a>
+        <a href="./aboutMe.html">About Me</a>
+        <a href="#" active>Travel Log</a>
+    </div>
+    
+    <div class="slide-container">
+        <!-- gallery -->
+        <div class="image">
+
+        </div>
+        <div class="imgTitle">
+
+        </div>
+        <div class="explanation">
+
+        </div>
+    </div>
+    <div class="grid-container">
+        
+    </div>
+
+    <!-- footer start-->
+    <button class="openbtn" id="menu"onclick="openNav()" >☰ MENU</button>
+    <footer>
+        <div class='text-center' style='color: white; background-color:black;'>
+            <p>Made by Ellyn | updated : 2020/03/01</p>
+        </div>
+    </footer>
+    <!-- footer end-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("menu").style.visibility="hidden";
+            
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+            document.getElementById("menu").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

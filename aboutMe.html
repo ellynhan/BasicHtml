@@ -20,8 +20,8 @@
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="./index.html">Home</a>
-        <a href="./aboutMe.html" active>About Me</a>
-        <a href="#">Travel Log</a>
+        <a href="#" active>About Me</a>
+        <a href="./travel.html">Travel Log</a>
     </div>
     <div id="whole-page-container" class="flex-row">
         <div id="content-page-container" class="d-flex flex-column " style="background-color:#474e5d">
@@ -78,7 +78,7 @@
     </div>
 
     <!-- footer start-->
-    <button class="openbtn" onclick="openNav()">☰ MENU</button>
+    <button class="openbtn" id="menu"onclick="openNav()" >☰ MENU</button>
     <footer>
         <div class='text-center' style='color: white; background-color:black;'>
             <p>Made by Ellyn | updated : 2020/02/27</p>
@@ -88,12 +88,33 @@
     <script>
         function openNav() {
             document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("menu").style.visibility="hidden";
+            
         }
 
         function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
+            document.getElementById("menu").style.visibility="visible";
         }
     </script>
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBC0y3Y9LQt-8FTxprU-sYrCBVOaNaDwqE",
+    authDomain: "myweb-f3ca3.firebaseapp.com",
+    databaseURL: "https://myweb-f3ca3.firebaseio.com",
+    projectId: "myweb-f3ca3",
+    storageBucket: "myweb-f3ca3.appspot.com",
+    messagingSenderId: "944145246947",
+    appId: "1:944145246947:web:7d25fb959b33461120f3d6",
+    measurementId: "G-J1X9XP3HZP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> 이거 파이어베이스 서버연결이야 아니면 아날리틱스연결이야? 지금 확인할 수가 없음-->
+
 </body>
 
 

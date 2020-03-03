@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+<!-- 누가 언제 수정했는지 알려주는 확장프로그램 설치하기. 아마 git lense 였던걸로 기억함... -->
+<!-- menu - active 안먹힘, 아마 hover 때문이라고 예상함. -->
+<!-- 방문자수 표시하는거 만들기 -->
+<!-- contact form 기록 남도록 만들기. (약간 메모기능 처럼.) -->
+<!-- sns 계정 연결 추가하기 -->
+<!-- 번역기능 넣기 - 실제 번역기 사용안하고 그냥 내가 다 바꾸는거. -->
 <head>
     <link rel="stylesheet" href='./style.css'>
     <title id="titleCheck">JaewonHan</title>
@@ -21,8 +26,9 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="#" active>Home</a>
             <a href="./aboutMe.html">About Me</a>
-            <a href="#">Travel Log</a>
+            <a href="./travel.html">Travel Log</a>
         </div>
+        <span class="inform_text">Scroll up!</span>
         <!-- flex-row : horizontal setting  -->
         <div id="content-page-container" class="d-flex flex-column">
             <!-- <div id="left-content-container" class="d-flex flex-column justify-content-center">
@@ -36,28 +42,36 @@
                         <div class="text">Welcome to My WebSite!</div>
                     </div> 
                 </div> -->
-                
             </div>
+            
+            <span class="loader__dot">⌃</span><span class="loader__dot">⌃</span><span class="loader__dot">⌃</span><span class="loader__dot">⌃</span>
             <div class="parallax"></div>
             
-            <div style="margin-bottom:40px;color:bisque;background-color:black;font-size:36px">
-                I have no idea what to write here yet🤔<br />
-                New Line<br />
-                New Line<br />
-                New Line<br />
-                New Line<br />
-                New Line<br />
-                New Line<br />
-                New Line<br />
+            <div style="margin-bottom:40px;color:bisque;background-color:black;">
+                <div class="container">
+                    <p style="font-size:24px; color:orange;">!!This function doesn't work yet, it's not completed!!</p>
+                    <p style="font-size:20px">Can you tell me any idea what to add to my Website?🤔🤔</p>
+                    <form action="/action_page.php">
+                        
+                        <label for="lname">Your Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
 
 
         <!-- footer -->
         <button class="openbtn" id="menu" onclick="openNav()">☰ MENU</button>
+        
         <footer>
             <div class='text-center'>
-                <p>Made by Ellyn | updated : 2020/02/27</p>
+                <p>Made by Ellyn | updated : 2020/02/28</p>
                 <!-- <p>Contact information: <a href="mailto:gkrp11@gmail.com">gkrp11@gmail.com</a></p> -->
             </div>
         </footer>
@@ -65,10 +79,12 @@
             //메뉴바 슬라이드 기능
             function openNav() {
                 document.getElementById("mySidepanel").style.width = "250px";
+                document.getElementById("menu").style.visibility="hidden";
             }
 
             function closeNav() {
                 document.getElementById("mySidepanel").style.width = "0";
+                document.getElementById("menu").style.visibility="visible";
             }
             window.onscroll = function() {myFunction()};
 
