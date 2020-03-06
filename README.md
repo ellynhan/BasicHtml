@@ -2,6 +2,9 @@
 ~~fix the menu block on the home page.~~
 
 ~~blinking scroll bars~~
+
+Add functions at Contact form 
+
 ## Navbar
 * <https://www.w3schools.com/howto/howto_js_topnav_responsive.asp> : responsive hambergur
 
