@@ -11,6 +11,12 @@ Add functions at Contact form / Random Quiz / ideal-worldcup
 * <https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse> : collapse navbar
 
 
+* <https://stackoverflow.com/questions/7055024/how-to-store-nav-bar-in-one-file>
+
+## QUIZ
+
+* <https://www.youtube.com/watch?v=zziI8vc_zBk>
+
 ## Align 
 * <https://getbootstrap.com/docs/4.3/utilities/flex/>
 
